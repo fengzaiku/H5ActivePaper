@@ -2,7 +2,6 @@
 var H5ComponentBar=function(name,cfg){
     var component=new H5ComponentBase(name,cfg);
     $.each(cfg.data,function(index,value){
-        console.log(value);
         var line=$('<div class="line">');
         var name=$('<div class="name">');
         var rate=$('<div class="rate">');

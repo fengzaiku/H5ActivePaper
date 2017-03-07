@@ -111,7 +111,7 @@
             this.addComponent('footer',{
                 bg:'images/footer.png',
                 css:{left:0,bottom:-20,width:'100%',height:'20px',zIndex:99},
-                animateIn:{opacity:1,bottom:'-1px'},
+                animateIn:{opacity:1,bottom:'-2px'},
                 animatePut:{opacity:0,bottom:'-20px'},
                 delay:500
             })
@@ -229,32 +229,6 @@
                 })
             .addPage()
                 .addComponent('caption',{
-                    text:'研发部人数'
-                })
-                .addComponent('pai',{
-                    type:'pai',
-                    data:[
-                        ['前端 ' , .2  ,'#99c0ff'],
-                        ['后台' , .4 ,'#ff7676'],
-                        ['产品' , .1 ,'#ffad69'],
-                        ['运维' , .1 ,'#99c0ff'],
-                        ['其他' , .2 ],
-                    ],
-                    css:{top:200,opacity:0},
-                    animateIn:{opacity:1},
-                    animateOut:{opacity:0},
-                    width:300,
-                    height:300,
-                    center:true
-                })
-                .addComponent('msg',{
-                    text:'前端占20%',
-                    css:{opacity:0,bottom:80,textAlign:'center',width:'100%',color:'#000000'},
-                    animateIn:{opacity:1},
-                    animateOut:{opacity:0}
-                })
-            .addPage()
-                .addComponent('caption',{
                     text:'前端开发'
                 })
                 .addComponent('bar',{
@@ -335,6 +309,32 @@
                     animateOut:{opacity:0},
                     delay:500
                 })
+                .addPage()
+                .addComponent('caption',{
+                    text:'研发部人数'
+                })
+                .addComponent('pai',{
+                    type:'pai',
+                    data:[
+                        ['前端 ' , .2  ,'#99c0ff'],
+                        ['后台' , .4 ,'#ff7676'],
+                        ['产品' , .1 ,'#ffad69'],
+                        ['运维' , .1 ,'#99c0ff'],
+                        ['其他' , .2 ],
+                    ],
+                    css:{top:200,opacity:0},
+                    animateIn:{opacity:1},
+                    animateOut:{opacity:0},
+                    width:300,
+                    height:300,
+                    center:true
+                })
+                .addComponent('msg',{
+                    text:'前端占20%',
+                    css:{opacity:0,bottom:80,textAlign:'center',width:'100%',color:'#000000'},
+                    animateIn:{opacity:1},
+                    animateOut:{opacity:0}
+                })
             .addPage()
                 .addComponent('caption',{
                     text:'学习难度分布'
@@ -400,7 +400,7 @@
                 })
                 .loader(['images/face-ad-left.png','images/face-ad-right.png','images/tail_back.png',
                     'images/tail_slogan.png','images/tail_logo.png', 'images/desc-img.png',
-                    'images/bg-desc.png','images/slogan.png','images/logo.png']);
+                    'images/bg-desc.png','images/slogan.png','images/logo.png','images/desc-bg.png']);
     })
 </script>
 </body>
