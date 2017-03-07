@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>移动端数据报告</title>
+    <script src="../js/lib/jquery.js"></script>
+    <script src="../js/lib/jquery.fullPage.js"></script>
+    <!--H5对象资源&管理内容：页&组件-->
+    <script src="../js/H5.js"></script>
+    <link rel="stylesheet" href="../css/H5.css"/>
+    <script src="../js/H5ComponentBase.js"></script>
+    <link rel="stylesheet" href="../css/H5ComponentBase.css"/>
+</head>
+<body>
+<!--测试内容组织功能，以及fullpage页面切换及租价切换,有可能回家再若干个资源-->
+<script>
+    $(function(){
+        var h5=new H5();
+        h5.addPage('face')
+         .addComponent('logo',{
+             text:'logo',
+             width:400,
+             height:100,
+             css:{backgroundColor:'red',top:200,opacity:0},
+             center:true,
+             animateIn:{opacity:1},
+             animateOut:{opacity:0},
+         })
+         .addComponent('slogan',{
+             text:'slogan',
+             width:400,
+             height:100,
+             css:{backgroundColor:'red',top:300},
+             center:true,
+         })
+        h5.addPage('desc')
+         .addComponent('caption',{
+             text:'核心理念',
+             width:400,
+             height:100,
+             css:{backgroundColor:'green',top:200},
+             center:true,
+         })
+        h5.addPage('page-3')
+         .addComponent('caption',{text:'课程方向分布'})
+        .loader();
+    })
+</script>
+</body>
+</html>
